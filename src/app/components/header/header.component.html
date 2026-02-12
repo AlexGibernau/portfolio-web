@@ -1,0 +1,41 @@
+<header [class.menu-open]="isMenuOpen()">
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <a class="brand" href="#" (click)="closeMenu()">
+                <img
+                    ngSrc="/assets/images/logo-page.png"
+                    alt="logo"
+                    width="60"
+                    height="60"
+                    priority
+                    class="logo-img" />
+            </a>
+
+            <button
+                class="menu-toggle"
+                (click)="toggleMenu()"
+                [attr.aria-expanded]="isMenuOpen()"
+                aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-links" [class.active]="isMenuOpen()">
+                <li>
+                    <a routerLink="/" fragment="about" (click)="closeMenu()">About me</a>
+                </li>
+                <li>
+                    <a routerLink="/" fragment="projects" (click)="closeMenu()">Projects</a>
+                </li>
+                <li>
+                    <a routerLink="/" fragment="skills" (click)="closeMenu()">Skills</a>
+                </li>
+                <li>
+                    <a routerLink="/" fragment="soft-skills" (click)="closeMenu()">Soft Skills</a>
+                </li>
+                <li>
+                    <a routerLink="/" fragment="contact" (click)="closeMenu()" class="contact-btn">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
