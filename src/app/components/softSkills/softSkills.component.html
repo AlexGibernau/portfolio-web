@@ -4,7 +4,7 @@
         @for (softSkill of softSkills; track softSkill.name) {
             <div class="soft-skill">
                 <img
-                    [ngSrc]="'/' + softSkill.logo"
+                    [ngSrc]="softSkill.logo"
                     [alt]="softSkill.name"
                     width="125"
                     height="125"
