@@ -1,0 +1,18 @@
+<div id="contact" class="bg-dark contact-container">
+    <h1>Contact Me</h1>
+    <div class="contact-options">
+        <a [href]="linkedinUrl" target="_blank">
+            <img
+                src="assets/images/contactLogos/LinkedIn_Logo.png"
+                alt="LinkedIn"
+                class="contact-logo" />
+        </a>
+        <div class="email-container" (click)="copyEmail()">
+            <img
+                src="assets/images/contactLogos/gmail_logo.png"
+                alt="Gmail"
+                class="contact-logo" />
+            <span *ngIf="emailCopied" class="copied-message">Copiado</span>
+        </div>
+    </div>
+</div>
