@@ -3,7 +3,7 @@
         <div class="nav-container">
             <a class="brand" href="#" (click)="closeMenu()">
                 <img
-                    ngSrc="/assets/images/logo-page.png"
+                    ngSrc="assets/images/logo-page.png"
                     alt="logo"
                     width="60"
                     height="60"
@@ -21,19 +21,36 @@
 
             <ul class="nav-links" [class.active]="isMenuOpen()">
                 <li>
-                    <a routerLink="/" fragment="about" (click)="closeMenu()">About me</a>
+                    <a routerLink="/" fragment="about" (click)="closeMenu()"
+                        >About me</a
+                    >
                 </li>
                 <li>
-                    <a routerLink="/" fragment="projects" (click)="closeMenu()">Projects</a>
+                    <a routerLink="/" fragment="projects" (click)="closeMenu()"
+                        >Projects</a
+                    >
                 </li>
                 <li>
-                    <a routerLink="/" fragment="skills" (click)="closeMenu()">Skills</a>
+                    <a routerLink="/" fragment="skills" (click)="closeMenu()"
+                        >Skills</a
+                    >
                 </li>
                 <li>
-                    <a routerLink="/" fragment="soft-skills" (click)="closeMenu()">Soft Skills</a>
+                    <a
+                        routerLink="/"
+                        fragment="soft-skills"
+                        (click)="closeMenu()"
+                        >Soft Skills</a
+                    >
                 </li>
                 <li>
-                    <a routerLink="/" fragment="contact" (click)="closeMenu()" class="contact-btn">Contact</a>
+                    <a
+                        routerLink="/"
+                        fragment="contact"
+                        (click)="closeMenu()"
+                        class="contact-btn"
+                        >Contact</a
+                    >
                 </li>
             </ul>
         </div>
